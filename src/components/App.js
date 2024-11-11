@@ -11,8 +11,10 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      {/* Pass name, city, and color props to Home */}
+      <Home name={user.name} city={user.city} color={user.color} />
+      {/* Pass bio and links props to About */}
+      <About bio={user.bio} links={user.links} />
     </div>
   );
 }
